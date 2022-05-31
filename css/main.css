@@ -439,13 +439,6 @@ img {
   position: absolute; */
 }
 
-.checkbox-title {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
-  color: var(--main-txt-cl);
-}
 .checkbox-icon {
   width: 16px;
   height: 15px;
@@ -460,7 +453,16 @@ img {
   background-size: contain;
   background-origin: border-box;
 }
+.checkbox-title {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
+  color: var(--main-txt-cl);
+}
+.checkbox-link {
+  color: var(--accent-cl);
+}
 .modal-form .btn {
   padding-left: 56px;
   padding-right: 55px;
