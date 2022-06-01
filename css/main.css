@@ -104,10 +104,10 @@ img {
   line-height: 0.84;
   text-decoration: none;
 }
-.accent-dark {
+.logo--accent-dark {
   color: var(--accent-cl-dark);
 }
-.accent-white {
+.logo--accent-white {
   color: var(--main-white-cl);
 }
 
@@ -126,32 +126,39 @@ img {
   align-items: center;
 }
 
-.header .link {
+/* .container .list, */
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* .header .item, */
+.nav__item {
+  margin-right: 50px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+/* .header .link, */
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.container .list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-.header .item {
-  margin-right: 50px;
-}
-.nav .item:last-child {
-  margin-right: 0;
-}
-
-.nav .link {
   color: var(--title-txt-cl);
   position: relative;
 }
-.nav .link.current::after {
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--accent-cl);
+}
+
+.nav__link--current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -159,38 +166,53 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-
   background-color: #2196f3;
   border-radius: 2px;
   bottom: -1px;
   transition: color var(--main-animation);
 }
 
-.nav .link.current {
+.nav__link--current {
   color: var(--accent-cl);
 }
 
-.header-list .item:last-child {
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-list__item {
+  margin-right: 50px;
+}
+
+.header-list__item:last-child {
   margin-right: 0;
 }
 
-.header-list .link {
+.header-list__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: color var(--main-animation);
 }
 
-.accent.link {
+.header-list__link--accent {
   color: var(--main-txt-cl);
 }
 
-.header-container .link:hover,
-.header-container .link:focus {
+.header-list__link:hover,
+.header-list__link:focus {
   color: var(--accent-cl);
 }
 
-.header-list .icon {
+.header-list__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -219,13 +241,10 @@ img {
   letter-spacing: 0.06em;
 }
 
-.hero-cont,
-.modal-form .btn {
+.hero__title {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.hero-title {
   width: 670px;
   height: 120px;
   text-align: center;
@@ -236,7 +255,41 @@ img {
   text-transform: uppercase;
 }
 
-.hero .btn,
+.hero__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 10px 32px;
+  background-color: #2196f3;
+  color: var(--main-white-cl);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: transparent;
+  transition: background-color var(--main-animation);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background-color: #188ce8;
+}
+
+/*
+============================
+| Modal form / Модальное окно
+============================
+*/
+.modal-form .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .subscribe-form-wrapper .btn,
 .modal-form .btn {
   border-radius: 4px;
@@ -254,19 +307,10 @@ img {
   transition: background-color var(--main-animation);
 }
 
-.hero .btn:hover,
-.hero .btn:focus,
 .subscribe-form-wrapper .btn:hover,
 .subscribe-form-wrapper .btn:focus {
   background-color: #188ce8;
 }
-
-/*
-============================
-| Modal form / Модальное окно
-============================
-*/
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -316,10 +360,12 @@ img {
   cursor: pointer;
   transition: background-color var(--main-animation);
 }
+
 .modal-close-icon:hover,
 .modal-close-icon:focus {
   fill: var(--accent-cl);
 }
+
 .modal-form-title {
   display: block;
   margin-right: auto;
@@ -335,6 +381,7 @@ img {
 
   color: var(--title-txt-cl);
 }
+
 .modal-form {
   text-align: center;
   position: absolute;
@@ -447,12 +494,14 @@ img {
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .checkbox-input:checked + .checkbox-icon {
   border-color: var(--accent-cl);
   background-color: var(--accent-cl);
   background-size: contain;
   background-origin: border-box;
 }
+
 .checkbox-title {
   font-size: 14px;
   line-height: 1.71;
@@ -460,9 +509,11 @@ img {
 
   color: var(--main-txt-cl);
 }
+
 .checkbox-link {
   color: var(--accent-cl);
 }
+
 .modal-form .btn {
   padding-left: 56px;
   padding-right: 55px;
@@ -474,73 +525,6 @@ img {
 ============================
 */
 
-.about .title,
-.after-title {
-  margin-bottom: 10px;
-  color: var(--title-txt-cl);
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.about .item {
-  margin-right: 30px;
-  width: 270px;
-}
-.about .icon-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  height: 120px;
-  background-color: var(--secondary-bg-cl);
-}
-.about .icon {
-  width: 70px;
-  height: 70px;
-}
-
-/* .about .item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--secondary-bg-cl);
-}
-
-.about .icon-antenna::before {
-  background-image: url('../images/icons.svg/antenna.svg');
-}
-.about .icon-clock::before {
-  background-image: url('../images/icons.svg/clock.svg');
-}
-.about .icon-diagram::before {
-  background-image: url('../images/icons.svg/diagram.svg');
-}
-.about .icon-astronaut::before {
-  background-image: url('../images/icons.svg/astronaut.svg');
-} */
-.about .item:last-child {
-  margin-right: 0;
-}
-.about .uppertitle {
-  line-height: 1.7;
-}
-
-/*
-============================
-| Gallery section / Чем мы занимаемся
-============================
-*/
-
-.gallery.section {
-  padding-top: 0;
-}
-
 .section-title {
   margin-bottom: 50px;
   color: var(--title-txt-cl);
@@ -551,22 +535,90 @@ img {
   text-align: center;
 }
 
-.gallery .item {
-  margin-right: 30px;
+.about__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
-.gallery .item:last-child {
+
+.about__item {
+  margin-right: 30px;
+  width: 270px;
+}
+
+.about__item:last-child {
   margin-right: 0;
 }
-.gallery.style {
+
+.about__icon-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+  background-color: var(--secondary-bg-cl);
+}
+
+.about__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.about__title {
+  margin-bottom: 10px;
+  color: var(--title-txt-cl);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__uppertitle {
+  line-height: 1.7;
+}
+
+/*
+============================
+| Gallery section / Чем мы занимаемся
+============================
+*/
+
+.gallery {
+  padding-top: 0;
+}
+
+.gallery__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* .section-title {
+  margin-bottom: 50px;
+  color: var(--title-txt-cl);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.86;
+  text-align: center;
+} */
+
+.gallery__item {
+  margin-right: 30px;
+}
+.gallery__item:last-child {
+  margin-right: 0;
+}
+
+.gallery__inner {
   position: relative;
 }
-.gallery-thumb {
-  position: relative;
-}
-.gallery-img {
+
+.gallery__img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.gallery-actions {
+
+.gallery__group {
   position: absolute;
   display: flex;
   bottom: 0;
@@ -576,13 +628,23 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.gallery .link {
+.gallery__link {
   display: flex;
   align-items: center;
   margin-right: auto;
   margin-left: auto;
 }
-.after-title {
+
+/* .gallery.style {
+  position: relative;
+} */
+
+.gallery__title {
+  margin-bottom: 10px;
+  color: var(--title-txt-cl);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: var(--main-white-cl);
   font-style: normal;
   line-height: 0.88;
@@ -600,11 +662,14 @@ img {
   font-size: 0.88;
   line-height: 1.19;
 }
-.team .section-title {
-  margin-bottom: 50px;
+
+.team__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
-.team .item {
+.team__item {
   margin-right: 30px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -613,12 +678,12 @@ img {
   background-color: var(--main-white-cl);
 }
 
-.team-sign {
+.team__sign {
   padding-bottom: 30px;
   padding-top: 30px;
 }
 
-.team .title {
+.team__title {
   margin-bottom: 10px;
   color: var(--title-txt-cl);
 
@@ -627,7 +692,7 @@ img {
   text-align: center;
 }
 
-.team-position {
+.team__text {
   text-align: center;
   margin-bottom: 16px;
 }
@@ -638,7 +703,7 @@ img {
 ============================
 */
 
-.team .icon-list {
+.team__icon-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -647,14 +712,19 @@ img {
   list-style-type: none;
 }
 
-.icon-item {
+.team__icon-item {
   margin-right: 10px;
 }
-.icon-item:last-child {
+
+.team__icon-item:last-child {
   margin-right: 0;
 }
 
-.icon-list .link {
+.team__icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team__icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -667,19 +737,19 @@ img {
   transition: background-color var(--main-animation);
 }
 
-.icon-list .link:hover,
-.icon-list .link:focus {
+.team__icon-link:hover,
+.team__icon-link:focus {
   background-color: var(--accent-cl);
 }
 
-.icon-list .link .icon.accent {
+.team__icon--accent {
   transition: fill var(--main-animation);
 }
-.icon-list .link:hover .icon.accent {
+.team__icon-link:hover .team__icon--accent {
   fill: var(--main-white-cl);
 }
 
-.icon-list .icon {
+.team__icon {
   fill: #afb1b8;
   justify-content: center;
   align-items: center;
@@ -687,8 +757,8 @@ img {
   height: 20px;
   transition: fill var(--main-animation);
 }
-.icon-list .icon:hover,
-.icon-list .icon:focus {
+.team__icon:hover,
+.team__icon:focus {
   fill: var(--main-white-cl);
 }
 
@@ -702,6 +772,11 @@ img {
   background-color: var(--main-white-cl);
 }
 
+.clients__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 .clients .item {
   margin-right: 30px;
   justify-content: center;
@@ -769,7 +844,7 @@ img {
 .footer-container {
   margin-right: 70px;
 }
-.footer .logo {
+.footer__logo {
   padding: 0px;
   margin-bottom: 20px;
 }
