@@ -76,64 +76,70 @@
 
           <!-- Модальное окно Modal form -->
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal-wrapper">
-              <button class="modal-close-btn" data-modal-close>
-                <svg class="modal-close-icon" width="14" height="14">
+            <div class="modal__wrapper">
+              <button class="modal__btn--close" data-modal-close>
+                <svg class="modal__icon--close" width="14" height="14">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-close-black"></use>
                 </svg>
               </button>
               <form class="modal-form" action="POST" autocomplete="off">
-                <p class="modal-form-title">
+                <p class="modal-form__title">
                   <strong>Оставьте свои данные, мы вам перезвоним</strong>
                 </p>
-                <label class="form-field">
-                  <span class="form-label">Имя</span>
+                <label class="modal-form__label">
+                  <span class="modal-form__text">Имя</span>
                   <input
-                    class="form-input"
+                    class="modal-form__input"
                     type="text"
                     name="name"
                     placeholder=""
                     autofocus
                     required
                   />
-                  <svg class="form-icon person">
+                  <svg class="modal-form__icon">
                     <use href="./images/icons.svg/symbol-defs-opt.svg#icon-person-modalform"></use>
                   </svg>
                 </label>
-                <label class="form-field">
-                  <span class="form-label">Телефон</span>
-                  <input class="form-input" type="tel" name="tel" placeholder="" required />
-                  <svg class="form-icon tel">
+                <label class="modal-form__label">
+                  <span class="modal-form__text">Телефон</span>
+                  <input class="modal-form__input" type="tel" name="tel" placeholder="" required />
+                  <svg class="modal-form__icon">
                     <use href="./images/icons.svg/symbol-defs-opt.svg#icon-phone-modalform"></use>
                   </svg>
                 </label>
-                <label class="form-field">
-                  <span class="form-label">Почта</span>
-                  <input class="form-input" type="email" name="email" placeholder="" required />
-                  <svg class="form-icon email">
+                <label class="modal-form__label">
+                  <span class="modal-form__text">Почта</span>
+                  <input
+                    class="modal-form__input"
+                    type="email"
+                    name="email"
+                    placeholder=""
+                    required
+                  />
+                  <svg class="modal-form__icon">
                     <use href="./images/icons.svg/symbol-defs-opt.svg#icon-email-modalform"></use>
                   </svg>
                 </label>
-                <label class="form-field">
-                  <span class="form-label">Комментарий</span>
+                <label class="modal-form__label">
+                  <span class="modal-form__text">Комментарий</span>
                   <textarea
-                    class="form-input comment"
+                    class="modal-form__input modal-form__input-comment"
                     name="comment"
                     placeholder="Введите текст"
                     rows="8"
                   ></textarea>
                 </label>
-                <label class="checkbox-field">
-                  <input class="checkbox-input visually-hidden" type="checkbox" name="policy" />
-                  <svg class="checkbox-icon" width="16" height="15">
+                <label class="checkbox__field">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="policy" />
+                  <svg class="checkbox__icon" width="16" height="15">
                     <use href="./images/icons.svg/symbol-defs-opt.svg#icon-check-modalform"></use>
                   </svg>
-                  <span class="checkbox-title"
+                  <span class="checkbox__text"
                     >Соглашаюсь с рассылкой и принимаю
-                    <a href="" class="checkbox-link">Условия договора</a></span
+                    <a class="checkbox__link" href="">Условия договора</a></span
                   >
                 </label>
-                <button class="btn" type="submit">Отправить</button>
+                <button class="modal-form__btn btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -209,7 +215,7 @@
                 />
                 <div class="gallery__group">
                   <a class="gallery__link link" href="">
-                    <h3 class="gallery__title after-title">Десктопные приложения</h3>
+                    <h3 class="gallery__title">Десктопные приложения</h3>
                   </a>
                 </div>
               </div>
@@ -522,51 +528,51 @@
       <section class="clients section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list">
-            <li class="item">
-              <h3 class="title visually-hidden">Логотип компании</h3>
-              <a class="link" href="">
-                <svg class="icon logo-clients-1">
+          <ul class="clients__list list">
+            <li class="clients__item">
+              <h3 class="clients__title visually-hidden">Логотип компании</h3>
+              <a class="clients__link link" href="">
+                <svg class="clients__icon icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-clients-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <h3 class="title visually-hidden">Логотип компании</h3>
-              <a class="link" href="">
-                <svg class="icon logo-clients-2">
+            <li class="clients__item">
+              <h3 class="clients__title visually-hidden">Логотип компании</h3>
+              <a class="clients__link link" href="">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-clients-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <h3 class="title visually-hidden">Логотип компании</h3>
-              <a class="link" href="">
-                <svg class="icon logo-clients-3">
+            <li class="clients__item">
+              <h3 class="clients__title visually-hidden">Логотип компании</h3>
+              <a class="clients__link link" href="">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-clients-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <h3 class="title visually-hidden">Логотип компании</h3>
-              <a class="link" href="">
-                <svg class="icon logo-clients-4">
+            <li class="clients__item">
+              <h3 class="clients__title visually-hidden">Логотип компании</h3>
+              <a class="clients__link link" href="">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-clients-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <h3 class="title visually-hidden">Логотип компании</h3>
-              <a class="link" href="">
-                <svg class="icon logo-clients-5">
+            <li class="clients__item">
+              <h3 class="clients__title visually-hidden">Логотип компании</h3>
+              <a class="clients__link link" href="">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-clients-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <h3 class="title visually-hidden">Логотип компании</h3>
-              <a class="link" href="">
-                <svg class="icon logo-clients-6">
+            <li class="clients__item">
+              <h3 class="clients__title visually-hidden">Логотип компании</h3>
+              <a class="clients__link link" href="">
+                <svg class="clients__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-clients-6"></use>
                 </svg>
               </a>
@@ -578,94 +584,107 @@
 
     <!-- Подвал сайта Footer -->
     <footer class="footer">
-      <div class="full-footer">
-        <div class="footer-container">
-          <a class="logo footer__logo" lang="en" aria-label="Логотип сайта" href="./index.html"
+      <div class="footer__holder">
+        <div class="footer__container">
+          <a class="footer__logo logo" lang="en" aria-label="Логотип сайта" href="./index.html"
             >Web<span class="logo--accent-white">Studio</span></a
           >
-          <address class="address">
-            <ul class="list">
-              <li class="item">
+          <address class="footer__address">
+            <ul class="footer__address-list list">
+              <li class="footer__address-item">
                 <a
-                  class="link"
+                  class="footer__address-link link"
                   href="https://goo.gl/maps/sHWixux6kZh7dcSC8"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="item">
-                <a class="link accent" href="mailto:info@example.com">info@example.com</a>
+              <li class="footer__address-item">
+                <a
+                  class="footer__address-link footer__address-link--accent link"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
               </li>
-              <li class="item">
-                <a class="link accent" href="tel:+380991111111">tel:+38 099 111 11 11</a>
+              <li class="footer__address-item">
+                <a
+                  class="footer__address-link footer__address-link--accent link"
+                  href="tel:+380991111111"
+                  >tel:+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="icon-footer">
-          <p class="title"><b>Присоединяйтесь</b></p>
-          <ul class="icon-list">
-            <li class="icon-item">
+        <div class="footer__icon-group">
+          <p class="footer__title"><b>Присоединяйтесь</b></p>
+          <ul class="footer__icon-list">
+            <li class="footer__icon-item">
               <a
-                class="link"
+                class="footer__icon-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Фейсбук иконка"
               >
-                <svg class="icon facebook">
+                <svg class="footer__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-item">
+            <li class="footer__icon-item">
               <a
-                class="link"
+                class="footer__icon-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Инстаграм иконка"
               >
-                <svg class="icon instagram">
+                <svg class="footer__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-item">
+            <li class="footer__icon-item">
               <a
-                class="link"
+                class="footer__icon-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Твитер иконка"
               >
-                <svg class="icon twitter">
+                <svg class="footer__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-item">
+            <li class="footer__icon-item">
               <a
-                class="link"
+                class="footer__icon-link link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Линкединиконка"
               >
-                <svg class="icon linkedin">
+                <svg class="footer__icon">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="subscribe-form-wrapper">
-          <label class="subscribe-form">
-            <span class="subscribe-title">Подпишитесь на рассылку</span>
-            <input class="text" type="text" name="e-mail" placeholder="E-mail" />
+        <form class="subscribe-form__wrapper">
+          <label class="subscribe-form__label">
+            <span class="subscribe-form__title">Подпишитесь на рассылку</span>
+            <input
+              class="subscribe-form__text text"
+              type="text"
+              name="e-mail"
+              placeholder="E-mail"
+            />
           </label>
-          <button class="btn" type="submit">Подписаться</button>
+          <button class="subscribe-form__btn btn" type="submit">Подписаться</button>
         </form>
       </div>
     </footer>
