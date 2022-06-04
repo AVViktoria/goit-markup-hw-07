@@ -1,0 +1,99 @@
+/*
+============================
+| Header section / Шапка сайта
+============================
+*/
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: var(--main-white-cl);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav__item {
+  margin-right: 50px;
+
+  &:last-child {
+  margin-right: 0;
+}}
+
+
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-txt-cl);
+  position: relative;
+
+  &:hover,
+  &:focus {
+  color: var(--accent-cl);
+}
+  &--current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  bottom: -1px;
+  transition: color var(--main-animation);
+}
+  &--current {
+  color: var(--accent-cl);
+}}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-list__item {
+  margin-right: 50px;
+
+  &:last-child {
+  margin-right: 0;
+}
+}
+
+.header-list__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color var(--main-animation);
+
+  &--accent {
+  color: var(--main-txt-cl);
+}
+  &:hover,
+  &:focus {
+  color: var(--accent-cl);
+}}
+
+.header-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

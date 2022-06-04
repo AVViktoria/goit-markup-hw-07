@@ -1,0 +1,21 @@
+/*
+============================
+| Footer section / Подвал 
+============================
+*/
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 57px;
+  background-color: var(--dark-bg-cl);
+}
+
+.footer__holder {
+  display: flex;
+  align-items: baseline;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

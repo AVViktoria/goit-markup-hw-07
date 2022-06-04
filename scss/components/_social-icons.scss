@@ -1,0 +1,61 @@
+/*
+============================
+| Team Icons / Иконки Команды
+============================
+*/
+
+.social-icons__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 32px;
+  padding-left: 32px;
+  list-style-type: none;
+}
+
+.social-icons__item {
+  margin-right: 10px;
+  
+  &:last-child {
+  margin-right: 0;
+}
+  &:not(:last-child) {
+  margin-right: 10px;
+}
+}
+
+.social-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--main-animation);   
+  background-color: var(--main-white-cl);
+  
+  &:hover,
+  &:focus {
+  background-color: var(--accent-cl);
+}}
+
+
+.social-icons--accent {
+  transition: fill var(--main-animation);
+  
+  .social-icons__link:hover & {
+  fill: var(--main-white-cl);
+}}
+
+.social-icons{
+  fill: #afb1b8;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  transition: fill var(--main-animation);
+
+  &:hover,
+  &:focus {
+  fill: var(--main-white-cl);
+}}

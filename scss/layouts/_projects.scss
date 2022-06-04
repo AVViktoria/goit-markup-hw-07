@@ -1,0 +1,86 @@
+/* 
+============================
+| Projects section / Проекты
+============================
+*/
+
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+}
+
+.projects__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 2 * 30px) / 3);
+  border: 1px solid #eeeeee;
+  border-top: none;
+  background-color: var(--main-white-cl);
+
+  &:nth-child(3n) {
+  margin-right: 0;
+}
+  &:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}}
+
+.projects__icon-link {
+  display: inline-block;
+  transition: box-shadow var(--main-animation);
+
+  &:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}}
+
+.projects__holder {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__action {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: translateY(100%);
+  transition: transform var(--main-animation);
+
+  .projects__icon-link:hover &,
+  .projects__icon-link:focus & {
+  transform: translateY(-100%);
+}}
+
+.projects__text {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  display: flex;
+  align-items: center;
+  margin: 63px 24px;
+  color: #ffffff;
+}
+
+.projects__sign-group {
+  padding: 20px 24px;
+}
+
+.projects__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+}
+
+.projects__label {
+  color: var(--main-txt-cl);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+

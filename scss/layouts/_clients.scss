@@ -1,0 +1,63 @@
+/*
+============================
+| Clients / Клиенты
+============================
+*/
+
+.clients {
+  padding: 94px 0;
+  background-color: var(--main-white-cl);
+}
+
+.clients__title {
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.clients__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.clients__item {
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color var(--main-animation);
+
+  &:last-child {
+  margin-right: 0;}
+
+  &:hover,
+  &:focus {
+  border-color: var(--accent-cl);
+}}
+
+.clients__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+  cursor: pointer;
+  transition: fill var(--main-animation), border-color var(--main-animation);
+  
+  &:hover,
+  &:focus {
+  fill: var(--accent-cl);
+  border-color: var(--accent-cl);
+}}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+}
+
