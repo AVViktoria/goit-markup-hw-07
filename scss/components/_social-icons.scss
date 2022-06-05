@@ -39,16 +39,15 @@
   background-color: var(--accent-cl);
 }}
 
-
-.social-icons--accent {
+  .social-icons--accent {
   transition: fill var(--main-animation);
   
   .social-icons__link:hover & {
   fill: var(--main-white-cl);
 }}
 
-.social-icons{
-  fill: #afb1b8;
+.social-icons {
+  fill: var(--main-fill-light);
   justify-content: center;
   align-items: center;
   width: 20px;

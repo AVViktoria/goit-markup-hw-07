@@ -163,7 +163,7 @@ img {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #2196f3;
+  background-color: var(--accent-cl);
   border-radius: 2px;
   bottom: -1px;
   transition: color var(--main-animation);
@@ -258,7 +258,7 @@ img {
   margin-right: auto;
   border-radius: 4px;
   padding: 10px 32px;
-  background-color: #2196f3;
+  background-color:var(--accent-cl);
   color: var(--main-white-cl);
 
   font-weight: 700;
@@ -273,7 +273,7 @@ img {
 
 .hero__btn:hover,
 .hero__btn:focus {
-  background-color: #188ce8;
+  background-color: var(--second-accent-cl);
 }
 
 /*
@@ -288,7 +288,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--backdrop-bg-cl); 
   opacity: 1;
   z-index: 10;
   transition: opacity var(--main-animation), visibility var(--main-animation);
@@ -309,8 +309,7 @@ img {
   height: 581px;
   border-radius: 4px;
   background-color: var(--main-white-cl);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow:var(--main-bcg-shadow);
   transition: opacity var(--main-animation), visibility var(--main-animation);
 }
 
@@ -425,7 +424,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--input-bg-cl);
 }
 
 .checkbox__field {
@@ -459,7 +458,7 @@ img {
   margin-right: 7px;
   border-radius: 2px;
   border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--accent-bcg-shadow);
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -491,14 +490,14 @@ img {
   text-align: center;
   align-items: center;
   border: transparent;
-  background-color: #2196f3;
+  background-color: var(--accent-cl);
   color: var(--main-white-cl);
   transition: background-color var(--main-animation);
 }
 
 .modal-form__btn:hover,
 .modal-form__btn:focus {
-  background-color: #188ce8;
+  background-color: var(--second-accent-cl);
 }
 
 /*
@@ -547,7 +546,7 @@ img {
   height: 70px;
 }
 
-.about__title {
+.section-subtitle {
   margin-bottom: 10px;
   color: var(--title-txt-cl);
   font-size: 14px;
@@ -596,7 +595,7 @@ img {
 }
 
 .gallery__img {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--accent-bcg-shadow);
 }
 
 .gallery__group {
@@ -654,8 +653,7 @@ img {
   margin-right: 30px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--main-bcg-shadow);
   background-color: var(--main-white-cl);
 }
 
@@ -913,7 +911,7 @@ img {
 | Subscribe section / Подпишитесь на рассылку
 ============================
 */
-.subscribe-form__wrapper {
+.subscribe-form {
   display: flex;
   align-items: flex-end;
 }
@@ -1007,7 +1005,7 @@ Portfolio
 
 .filters__item:hover,
 .filters__item:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--accent-bcg-shadow);
 }
 
 .filters__btn {
@@ -1069,8 +1067,7 @@ Portfolio
 }
 
 .projects__icon-link:hover {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--main-bcg-shadow);
 }
 
 .projects__holder {
@@ -1085,7 +1082,7 @@ Portfolio
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--accent-bcg-shadow);
   transform: translateY(100%);
   transition: transform var(--main-animation);
 }
