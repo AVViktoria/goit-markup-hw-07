@@ -39,9 +39,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include display-flex(center, center);
   width: 30px;
   height: 30px;
   padding: 0;

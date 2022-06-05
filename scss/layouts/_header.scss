@@ -10,13 +10,11 @@
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
+  @include display-flex(center);
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
+  @include display-flex(center);
   margin-left: auto;
 }
 
@@ -60,8 +58,7 @@
 }}
 
 .header-list {
-  display: flex;
-  align-items: center;
+  @include display-flex(center);
   margin-left: auto;
 }
 
@@ -74,15 +71,12 @@
 }
 
 .header-list__link {
-  display: block;
+  @include display-flex(center, center);
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: color var(--main-animation);
 
   &--accent {

@@ -6,13 +6,13 @@
 
 .team {
   background-color: var(--secondary-bg-cl);
+  @include fonts(0.88px, 1.19);
   font-size: 0.88;
   line-height: 1.19;
 }
 
 .team__list {
-  display: flex;
-  align-items: center;
+  @include display-flex(center);
   margin-left: auto;
 }
 

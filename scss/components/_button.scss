@@ -1,16 +1,12 @@
 .btn {
   font-family: inherit;
   cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
+  @include display-flex(center, center);
   padding: 10px 32px;
   border-radius: 4px;
-  
+   
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
+  @include fonts(16px, 1.9);
   background-color: transparent;
   background-color:var(--accent-cl);
   color: var(--main-white-cl);

@@ -18,10 +18,9 @@
   margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fonts(20px, 1.15, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
+  
   color: var(--title-txt-cl);
 }
 
@@ -41,9 +40,7 @@
   margin: 0;
   margin-bottom: 4px;
   text-align: left;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include fonts(12px, 1.17, 0.01em);
   cursor: pointer;
   color: var(--main-txt-cl);
 }
@@ -89,9 +86,7 @@
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include fonts(12px, 1.17, 0.01em);
   color: var(--input-bg-cl);
 }
 

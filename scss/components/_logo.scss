@@ -13,8 +13,7 @@
 
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 0.84;
+  @include fonts(26px, 0.84);
   text-decoration: none;
 
   &--accent-dark {

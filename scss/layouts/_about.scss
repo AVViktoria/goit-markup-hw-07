@@ -5,8 +5,7 @@
 */
 
 .about__list {
-  display: flex;
-  align-items: center;
+  @include display-flex(center);
   margin-left: auto;
 }
 
@@ -19,9 +18,7 @@
 }}
 
 .about__icon-group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include display-flex(center, center);
   margin-bottom: 30px;
   border-radius: 4px;
   height: 120px;

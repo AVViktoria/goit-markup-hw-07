@@ -1,2 +1,16 @@
-//@mixins btn;
-//@mixins fonts;
+
+@mixin fonts($fs, $lh, $ls:false ) {
+  font-size: $fs;
+  line-height: $lh;
+  @if $ls {
+    letter-spacing: $ls; 
+}}
+
+@mixin display-flex($ali, $jc:false ) {
+  display: flex;
+  align-items: $ali;   
+  @if $jc {
+    justify-content: $jc;
+}}
+
+  

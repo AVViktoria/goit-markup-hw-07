@@ -1,7 +1,5 @@
 .checkbox__field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-flex(center, center);
   margin-bottom: 30px;
   cursor: pointer;
 }
@@ -35,9 +33,7 @@
 }}
 
 .checkbox__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fonts(14px, 1.71, 0.03em);
   color: var(--main-txt-cl);
 }
 
