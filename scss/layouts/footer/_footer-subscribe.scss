@@ -4,18 +4,25 @@
 ============================
 */
 
-.subscribe-form__wrapper {
+.subscribe-form {
   @include display-flex(flex-end);
 }
 
 .subscribe-form__label {
   margin-right: 12px;
 }
-
 .subscribe-form__title {
   display: block;
   font-weight: 700;
+  margin-bottom: 20px;
+  font-style: normal;
+  @include fonts(14px, 1.14);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-cl);
 }
+
 
 .subscribe-form__text {
   padding: 15px 15px 15px 16px;

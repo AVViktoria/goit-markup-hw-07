@@ -35,14 +35,14 @@
   background-color: var(--accent-cl);
 }}
 
-  .social-icons--accent {
+  .social-icons__picture--accent {
   transition: fill var(--main-animation);
   
   .social-icons__link:hover & {
   fill: var(--main-white-cl);
 }}
 
-.social-icons {
+.social-icons__picture {
   fill: var(--main-fill-light);
   justify-content: center;
   align-items: center;

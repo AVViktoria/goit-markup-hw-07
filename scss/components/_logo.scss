@@ -16,10 +16,10 @@
   @include fonts(26px, 0.84);
   text-decoration: none;
 
-  &--accent-dark {
+  &__accent-dark {
   color: var(--accent-cl-dark);
 }
 
-  &--accent-white {
+  &__accent-white {
   color: var(--main-white-cl);
 }}

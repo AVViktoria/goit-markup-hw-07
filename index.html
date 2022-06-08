@@ -30,7 +30,7 @@
     <header class="header">
       <div class="container header-container">
         <a class="logo" lang="en" href="./index.html" aria-label="Логотип сайта"
-          >Web<span class="logo--accent-dark">Studio</span></a
+          >Web<span class="logo__accent-dark">Studio</span></a
         >
         <nav class="nav">
           <ul class="nav__list list">
@@ -77,9 +77,9 @@
 
           <!-- Модальное окно Modal form -->
           <div class="backdrop is-hidden" data-modal>
-            <div class="modal__wrapper">
-              <button class="modal__btn--close" data-modal-close>
-                <svg class="modal__icon--close" width="14" height="14">
+            <div class="modal">
+              <button class="modal__btn-close" data-modal-close>
+                <svg class="modal__icon-close" width="14" height="14">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-close-black"></use>
                 </svg>
               </button>
@@ -130,7 +130,7 @@
                     rows="8"
                   ></textarea>
                 </label>
-                <label class="checkbox__field">
+                <label class="checkbox">
                   <input class="checkbox__input visually-hidden" type="checkbox" name="policy" />
                   <svg class="checkbox__icon" width="16" height="15">
                     <use href="./images/icons.svg/symbol-defs-opt.svg#icon-check-modalform"></use>
@@ -270,9 +270,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team__sign">
-                <h3 class="team__title">Игорь Демьяненко</h3>
-                <p class="team__text" lang="en">Product Designer</p>
+             <div class="social-icons"> 
+                <h3 class="social-icons__title">Игорь Демьяненко</h3>
+                <p class="social-icons__text" lang="en">Product Designer</p>
                 <ul class="social-icons__list">
                   <li class="social-icons__item">
                     <a
@@ -282,7 +282,7 @@
                       rel="noopener noreferrer"
                       aria-label="Фейсбук иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
@@ -294,7 +294,7 @@
                       rel="noopener noreferrer"
                       aria-label="Инстаграм иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use
                           href="./images/icons.svg/symbol-defs-opt.svg#icon-instagram"
                         ></use></svg
@@ -308,7 +308,7 @@
                       rel="noopener noreferrer"
                       aria-label="Твитер иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
@@ -320,7 +320,7 @@
                       rel="noopener noreferrer"
                       aria-label="Линкедин иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
@@ -335,9 +335,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team__sign">
-                <h3 class="team__title">Ольга Репина</h3>
-                <p class="team__text" lang="en">Frontend Developer</p>
+              <div class="social-icons">
+                <h3 class="social-icons__title">Ольга Репина</h3>
+                <p class="social-icons__text" lang="en">Frontend Developer</p>
                 <ul class="social-icons__list">
                   <li class="social-icons__item">
                     <a
@@ -347,7 +347,7 @@
                       rel="noopener noreferrer"
                       aria-label="Фейсбук иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
@@ -359,7 +359,7 @@
                       rel="noopener noreferrer"
                       aria-label="Инстаграм иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use
                           href="./images/icons.svg/symbol-defs-opt.svg#icon-instagram"
                         ></use></svg
@@ -373,7 +373,7 @@
                       rel="noopener noreferrer"
                       aria-label="Твитер иконка"
                     >
-                      <svg class="social-icons social-icons__accent">
+                      <svg class="social-icons__picture social-icons__picture__accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
@@ -385,7 +385,7 @@
                       rel="noopener noreferrer"
                       aria-label="Линкедин иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
@@ -400,9 +400,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team__sign">
-                <h3 class="team__title">Николай Тарасов</h3>
-                <p class="team__text" lang="en">Marketing</p>
+              <div class="social-icons">
+                <h3 class="social-icons__title">Николай Тарасов</h3>
+                <p class="social-icons__text" lang="en">Marketing</p>
                 <ul class="social-icons__list">
                   <li class="social-icons__item">
                     <a
@@ -412,7 +412,7 @@
                       rel="noopener noreferrer"
                       aria-label="Фейсбук иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
@@ -424,7 +424,7 @@
                       rel="noopener noreferrer"
                       aria-label="Инстаграм иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use
                           href="./images/icons.svg/symbol-defs-opt.svg#icon-instagram"
                         ></use></svg
@@ -438,7 +438,7 @@
                       rel="noopener noreferrer"
                       aria-label="Твитер иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
@@ -450,7 +450,7 @@
                       rel="noopener noreferrer"
                       aria-label="Линкедин иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
@@ -465,9 +465,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team__sign">
-                <h3 class="team__title">Михаил Ермаков</h3>
-                <p class="team__text" lang="en">UI Designer</p>
+              <div class="social-icons">
+                <h3 class="social-icons__title">Михаил Ермаков</h3>
+                <p class="social-icons__text" lang="en">UI Designer</p>
                 <ul class="social-icons__list">
                   <li class="social-icons__item">
                     <a
@@ -477,7 +477,7 @@
                       rel="noopener noreferrer"
                       aria-label="Фейсбук иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
@@ -489,7 +489,7 @@
                       rel="noopener noreferrer"
                       aria-label="Инстаграм иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use
                           href="./images/icons.svg/symbol-defs-opt.svg#icon-instagram"
                         ></use></svg
@@ -503,7 +503,7 @@
                       rel="noopener noreferrer"
                       aria-label="Твитер иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
@@ -515,7 +515,7 @@
                       rel="noopener noreferrer"
                       aria-label="Линкедин иконка"
                     >
-                      <svg class="social-icons social-icons--accent">
+                      <svg class="social-icons__picture social-icons__picture--accent">
                         <use href="./images/icons.svg/symbol-defs-opt.svg#icon-linkedin"></use></svg
                     ></a>
                   </li>
@@ -585,32 +585,32 @@
 
     <!-- Подвал сайта Footer -->
     <footer class="footer">
-      <div class="footer__holder">
-        <div class="footer-address__container">
-          <a class="footer-address__logo logo" lang="en" aria-label="Логотип сайта" href="./index.html"
-            >Web<span class="logo--accent-white">Studio</span></a
+      <div class="address footer__holder">
+        <div class="address__container">
+          <a class="address__logo logo" lang="en" aria-label="Логотип сайта" href="./index.html"
+            >Web<span class="address__logo-text logo__accent-white">Studio</span></a
           >
           <address class="address__box">
-            <ul class="footer-address__list list">
-              <li class="footer-address__item">
+            <ul class="address__list list">
+              <li class="address__item">
                 <a
-                  class="footer-address__link  link"
+                  class="address__link link"
                   href="https://goo.gl/maps/sHWixux6kZh7dcSC8"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="footer-address__item">
+              <li class="address__item">
                 <a
-                  class="footer-address__link footer-address__link--accent link"
+                  class="address__link address__link--accent link"
                   href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="address__item">
                 <a
-                  class="footer-address__link footer-address__link--accent link"
+                  class="address__link address__link--accent link"
                   href="tel:+380991111111"
                   >tel:+38 099 111 11 11</a
                 >
@@ -618,79 +618,80 @@
             </ul>
           </address>
         </div>
-        <div class="footer__icon-group">
-          <p class="slogan-title footer__title"><b>Присоединяйтесь</b></p>
-          <ul class="social-icons__list footer__icon-list">
-            <li class="social-icons__item footer__icon-item">
+        <div class="socials social-icons">
+          <p class="socials__title social-icons__title"><b>Присоединяйтесь</b></p>
+          <ul class="socials__list social-icons__list ">
+            <li class="socials__item social-icons__item">
               <a
-                class="social-icons__link footer__icon-link"
+                class="socials__link social-icons__link "
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Фейсбук иконка"
               >
-                <svg class="social-icons footer__icon">
+                <svg class="socials__picture social-icons__picture ">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons__item footer__icon-item">
+            <li class="social-icons__item socials__item">
               <a
-                class="social-icons__link footer__icon-link"
+                class="social-icons__link socials__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Инстаграм иконка"
               >
-                <svg class="social-icons footer__icon">
+                <svg class="social-icons__picture socials__picture">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons__item footer__icon-item">
+            <li class="social-icons__item socials__item">
               <a
-                class="social-icons__link footer__icon-link"
+                class="social-icons__link socials__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Твитер иконка"
               >
-                <svg class="social-icons footer__icon">
+                <svg class="social-icons__picture socials__picture">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icons__item footer__icon-item">
+            <li class="social-icons__item socials__item">
               <a
-                class="social-icons__link footer__icon-link"
+                class="social-icons__link socials__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Линкединиконка"
               >
-                <svg class="social-icons footer__icon">
+                <svg class="social-icons__picture socials__picture">
                   <use href="./images/icons.svg/symbol-defs-opt.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-
-        <div class="subscribe-form">
-          <form class="subscribe-form__wrapper">
-            <label class="subscribe-form__label">
-              <span class="slogan-title subscribe-form__title">Подпишитесь на рассылку</span>
-              <input
-                class="subscribe-form__text text"
-                type="text"
-                name="e-mail"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="subscribe-form__btn btn" type="submit">Подписаться</button>
-          </form>
-        </div>
+        <form class="subscribe-form">
+          <label class="subscribe-form__label">
+            <span class="subscribe-form__title">Подпишитесь на рассылку</span>
+            <input
+              class="subscribe-form__text text"
+              type="text"
+              name="e-mail"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="subscribe-form__btn btn" type="submit">Подписаться</button>
+        </form>
       </div>
+
+        
+          
+      
     </footer>
     <script src="./js/modal.js"></script>
     <!-- <script>

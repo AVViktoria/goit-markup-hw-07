@@ -156,11 +156,11 @@ img {
   text-decoration: none;
 }
 
-.logo--accent-dark {
+.logo__accent-dark {
   color: var(--accent-cl-dark);
 }
 
-.logo--accent-white {
+.logo__accent-white {
   color: var(--main-white-cl);
 }
 
@@ -218,16 +218,16 @@ img {
   background-color: var(--accent-cl);
 }
 
-.social-icons--accent {
+.social-icons__picture--accent {
   -webkit-transition: fill var(--main-animation);
   transition: fill var(--main-animation);
 }
 
-.social-icons__link:hover .social-icons--accent {
+.social-icons__link:hover .social-icons__picture--accent {
   fill: var(--main-white-cl);
 }
 
-.social-icons {
+.social-icons__picture {
   fill: var(--main-fill-light);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -241,7 +241,7 @@ img {
   transition: fill var(--main-animation);
 }
 
-.social-icons:hover, .social-icons:focus {
+.social-icons__picture:hover, .social-icons__picture:focus {
   fill: var(--main-white-cl);
 }
 
@@ -327,7 +327,7 @@ Portfolio
   visibility: hidden;
 }
 
-.modal__wrapper {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -343,7 +343,7 @@ Portfolio
   transition: opacity var(--main-animation), visibility var(--main-animation);
 }
 
-.modal__btn--close {
+.modal__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -367,7 +367,7 @@ Portfolio
   transition: background-color var(--main-animation);
 }
 
-.modal__btn--close:hover, .modal__btn--close:focus {
+.modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-cl);
 }
 
@@ -478,7 +478,7 @@ Portfolio
   background-color: var(--second-accent-cl);
 }
 
-.checkbox__field {
+.checkbox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,8 +825,13 @@ Portfolio
   background-color: var(--secondary-bg-cl);
   font-size: 0.88px;
   line-height: 1.19;
+}
+
+.social-icons {
   font-size: 0.88;
   line-height: 1.19;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .team__list {
@@ -848,12 +853,7 @@ Portfolio
   background-color: var(--main-white-cl);
 }
 
-.team__sign {
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
-
-.team__title {
+.social-icons__title {
   margin-bottom: 10px;
   color: var(--title-txt-cl);
   font-size: 16px;
@@ -861,7 +861,7 @@ Portfolio
   text-align: center;
 }
 
-.team__text {
+.social-icons__text {
   text-align: center;
   margin-bottom: 16px;
 }
@@ -1079,8 +1079,55 @@ Portfolio
   padding-right: 15px;
 }
 
-.slogan__title {
+/*
+============================
+| Address section / Адрес секция
+============================
+*/
+.address__container {
+  margin-right: 70px;
+}
+
+.address__logo {
+  padding: 0px;
   margin-bottom: 20px;
+}
+
+.address__list {
+  display: block;
+}
+
+.address__item:first-child {
+  margin-bottom: 9px;
+}
+
+.address__item:last-child {
+  margin-top: 6px;
+}
+
+.address__link {
+  color: var(--main-white-cl);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.address__link--accent {
+  color: var(--accent-cl-white);
+}
+
+/* 
+============================
+| Join section / Присоединяйтесь
+============================
+*/
+.socials {
+  display: block;
+  margin-right: 93px;
+}
+
+.socials__title {
+  margin-bottom: 20px;
+  text-align: left;
   font-style: normal;
   font-size: 14px;
   line-height: 1.14;
@@ -1090,71 +1137,22 @@ Portfolio
   color: var(--main-white-cl);
 }
 
-/*
-============================
-| Address section / Адрес секция
-============================
-*/
-.footer-address__container {
-  margin-right: 70px;
-}
-
-.footer-address__logo {
-  padding: 0px;
-  margin-bottom: 20px;
-}
-
-.footer-address__list {
-  display: block;
-}
-
-.footer-address__item:first-child {
-  margin-bottom: 9px;
-}
-
-.footer-address__item:last-child {
-  margin-top: 6px;
-}
-
-.footer-address__link {
-  color: var(--main-white-cl);
-  font-style: normal;
-  line-height: 1.7;
-}
-
-.footer-address__link--accent {
-  color: var(--accent-cl-white);
-}
-
-/* 
-============================
-| Join section / Присоединяйтесь
-============================
-*/
-.footer__icon-group {
-  display: block;
-  margin-right: 93px;
-}
-
-.footer__icon-list {
+.socials__list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 0;
 }
 
-.footer__icon-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer__icon-link {
+.socials__link {
   background-color: var(--accent-bg-cl);
 }
 
-.footer__icon-link:hover, .footer__icon-link:focus {
-  background-color: var(--accent-cl);
-}
-
-.footer__icon {
+.socials__picture {
   fill: var(--main-white-cl);
 }
 
@@ -1163,7 +1161,7 @@ Portfolio
 | Subscribe section / Подпишитесь на рассылку
 ============================
 */
-.subscribe-form__wrapper {
+.subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1179,6 +1177,14 @@ Portfolio
 .subscribe-form__title {
   display: block;
   font-weight: 700;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-cl);
 }
 
 .subscribe-form__text {

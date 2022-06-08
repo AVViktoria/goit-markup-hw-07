@@ -4,29 +4,38 @@
 ============================
 */
 
-.footer__icon-group {
+.socials {
   display: block;
   margin-right: 93px;
 }
 
-.footer__icon-list {
+.socials__title {
+  margin-bottom: 20px;
+  text-align: left;
+  font-style: normal;
+  @include fonts(14px, 1.14);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-cl);
+  
+}
+
+.socials__list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 0;
 }
 
-.footer__icon-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer__icon-link {
+.socials__link { 
   background-color:  var(--accent-bg-cl);
-  
-  &:hover,
-  &:focus {
-  background-color: var(--accent-cl);
-}}
+}
 
-.footer__icon {
+.socials__picture {
   fill: var(--main-white-cl);
 }

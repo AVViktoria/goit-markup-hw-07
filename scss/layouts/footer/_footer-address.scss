@@ -4,20 +4,20 @@
 ============================
 */
 
-.footer-address__container {
+.address__container {
   margin-right: 70px;
 }
 
-.footer-address__logo {
+.address__logo {
   padding: 0px;
   margin-bottom: 20px;
 }
 
-.footer-address__list  {
+.address__list  {
   display: block;
 }
 
-.footer-address__item {
+.address__item {
 
   &:first-child {
   margin-bottom: 9px;
@@ -27,7 +27,7 @@
 }
 }
 
-.footer-address__link  {
+.address__link  {
   color: var(--main-white-cl);
   font-style: normal;
   line-height: 1.7;
